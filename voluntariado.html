@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntários</title>
+</head>
+<body>
+    <header>
+        <h1>FUNDAÇÃO MUNDO SEM BARREIRAS</h1>
+        <nav>
+            <a href="index.html">Início</a>  |  <a href="sobre.html">Quem Somos</a>  |  <a href="projetos.html">Projetos</a>  |  <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Por que ser voluntário?</h2>
+            <p>Ser voluntário na Mundo Sem Barreiras é mais do que ajudar: é fazer parte de um movimento que leva educação, capacitação e inclusão digital para quem mais precisa. Cada hora dedicada gera impacto real em comunidades vulneráveis.</p>
+        </section>
+        <section>
+            <h2>Como posso ajudar?</h2>
+            <ul>
+                <li>Educação: reforço escolar, aulas de leitura e escrita;</li>
+                <li>Capacitação: oficinas profissionais (culinária, artesanato, empreendedorismo, informática);</li>
+                <li>Inclusão Digital: aulas de informática básica, mentoria em tecnologia;</li>
+                <li>Apoio comunitário: organização de eventos, apoio logístico, comunicação;</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Benefícios ao ser voluntário</h2>
+            <p>Ao ser voluntário, você desenvolve novas habilidades, amplia sua rede de contatos, fortalece sua experiência profissional e recebe certificado digital de participação.</p>
+        </section>
+        <section>
+            <h3>Increva-se aqui</h3>
+            <form action="submit_volunteer_form" method="post">
+                <label for="name">Nome:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Telefone:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                <label for="interests">Áreas de Interesse:</label><br>
+                <select id="interests" name="interests" multiple required>
+                    <option value="education">Educação</option>
+                    <option value="training">Capacitação</option>
+                    <option value="digital_inclusion">Inclusão Digital</option>
+                    <option value="community_support">Apoio Comunitário</option>
+                </select><br><br>
+                <input type="submit" value="Enviar">
+        </section>
+            
+    </main>
+    <footer>
+        <p>&copy; 2025 Fundação Mundo sem Barreiras. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
