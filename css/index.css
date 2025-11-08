@@ -145,7 +145,7 @@ header {
 
 .hero-text h1 {
   font-size: 2.5rem;
-  color: #1d3557;              /* azul escuro suave */
+  color: #000000;              /* azul escuro suave */
   margin-bottom: 20px;
 }
 
@@ -153,6 +153,7 @@ header {
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .hero .btn {

@@ -77,7 +77,7 @@ header {
 /* Estilo do título "Quem Somos" */
 .sobre-texto h2 {
   font-size: 2rem;             /* Tamanho grande do título */
-  color: #00856f;              /* Verde principal do site */
+  color: #040505;              /* Verde principal do site */
   margin-bottom: 15px;         /* Espaço entre o título e o parágrafo */
 }
 
@@ -86,6 +86,7 @@ header {
   font-size: 1.1rem;           /* Tamanho confortável de leitura */
   color: #333;                 /* Cor neutra e legível */
   line-height: 1.6;            /* Espaçamento entre linhas */
+  text-align: justify;
 }
 
 /* ===== RESPONSIVIDADE ===== */
@@ -121,6 +122,11 @@ header {
   flex-direction: row; /* Mantém a ordem: imagem à direita */
 }
 
+.historia-container h2 {
+  font-size: 2rem;
+  color: #0d0f0f;
+  margin-bottom: 15px;
+}
 /* Estilo da imagem */
 .historia-image img {
   width: 550px;
@@ -139,10 +145,11 @@ header {
   margin-bottom: 15px;
 }
 
-.historia-texto p {
+.historia-text p {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 /* Responsividade */
@@ -188,7 +195,7 @@ header {
 .visao-image h3,
 .valores-image h3 {
   font-size: 1.5rem;
-  color: #00856f;
+  color: #020202;
   margin-bottom: 10px;
 }
 
@@ -212,3 +219,48 @@ header {
   border-radius: 20px;       /* Bordas arredondadas */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* ===== RESPONSIVIDADE - MISSÃO, VISÃO E VALORES ===== */
+@media (max-width: 768px) {
+  .missao-visao-valores-container {
+    flex-direction: column; /* Empilha as três seções em vez de deixá-las lado a lado */
+    align-items: center; /* Centraliza os blocos na tela */
+    text-align: center; /* Centraliza os títulos e parágrafos */
+  }
+
+  .missao-image,
+  .visao-image,
+  .valores-image {
+    width: 90%; /* Faz cada bloco ocupar quase toda a largura do celular */
+    margin-bottom: 30px; /* Espaço entre os blocos */
+  }
+
+  .missao-image img,
+  .visao-image img,
+  .valores-image img {
+    width: 80%; /* Diminui o tamanho das imagens no celular */
+    height: auto;
+  }
+
+  .missao-image p,
+  .visao-image p,
+  .valores-image p {
+    text-align: justify; /* Mantém o texto justificado mesmo no mobile */
+  }
+}
+
+/* ===== FOOTER ===== */
+  footer {
+  background-color: #D96D39; /* cor institucional */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 15px;
+  margin-top: 40px;
+  border-top: 4px solid #006e5a; /* linha sutil no topo para destacar o rodapé */
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+
