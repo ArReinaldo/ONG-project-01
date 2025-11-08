@@ -1,0 +1,281 @@
+/* --- CONFIGURAÇÕES GERAIS DO SITE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- CABEÇALHO --- */
+header {
+  display: flex;                  /* Coloca logo e menu lado a lado */
+  align-items: center;            /* Centraliza verticalmente */
+  justify-content: center; /* Deixa logo à esquerda e menu à direita */
+  gap: 60px;                      /* Espaçamento entre logo e menu */
+  padding: 20px 60px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header nav {
+  margin: 0 auto
+}
+
+/* --- MENU --- */
+.menu {
+  display: flex;    /* Coloca os links lado a lado */
+  gap: 30px;        /* Espaçamento entre os links */
+}
+
+.menu a {
+  text-decoration: none;  /* Remove o sublinhado */
+  color: #333;            /* Cor do texto */
+  font-weight: bold;
+  transition: color 0.3s; /* Efeito suave ao passar o mouse */
+}
+
+.menu a:hover {
+  color: #00856f; /* Verde semelhante ao do site Mãos */
+}
+
+/* --- LOGO --- */
+.logo img {
+  height: 90px; /* Tamanho da logo */
+  width: auto;  /* Mantém a proporção */
+}
+
+/* ===== SEÇÃO O QUE FAZEMOS ===== */
+.oque-fazemos {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* cor leve para diferenciar a seção */
+}
+
+.oque-fazemos h2 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Linha decorativa abaixo do título */
+.oque-fazemos h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff; /* azul, pode mudar */
+  margin: 10px auto 40px auto; /* centraliza a linha */
+  border-radius: 2px;
+}
+
+.servicos-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* espaço entre os blocos */
+  flex-wrap: wrap; /* faz quebrar para outra linha em telas pequenas */
+}
+
+.servico {
+  max-width: 300px;
+  text-align: center;
+}
+
+.servico img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.servico h3 {
+  font-size: 1.3em;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .servicos-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .servicos-container {
+    flex-direction: column; /* empilha as imagens */
+    align-items: center; /* centraliza os blocos */
+  }
+
+  .servico {
+    max-width: 90%; /* ocupa quase toda a largura da tela */
+  }
+
+  .oque-fazemos h2 {
+    font-size: 1.8em; /* título um pouco menor */
+  }
+
+  .servico img {
+    max-width: 250px;
+  }
+}
+
+
+/* ======= SEÇÃO HERO ======= */
+.hero {
+  display: flex;               /* coloca o texto e a imagem lado a lado */
+  align-items: center;         /* centraliza verticalmente */
+  justify-content: space-between; /* espaço entre texto e imagem */
+  padding: 60px 10%;           /* espaço interno (superior/inferior e laterais) */
+  background-color: #f8f9fa;   /* fundo claro */
+}
+
+.hero-text {
+  flex: 1;                     /* ocupa metade da largura */
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #1d3557;              /* azul escuro suave */
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background-color: #D96D39;   /* laranja */
+  color: #fff;
+  padding: 12px 24px;
+  margin-right: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #21867a;
+}
+
+.hero-image {
+  flex: 1;                     /* ocupa metade da largura */
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 90%;                  /* reduz um pouco o tamanho da imagem */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== SEÇÃO ÚLTIMAS NOTÍCIAS ===== */
+.ultimas-noticias {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff; /* branco para destacar */
+}
+
+.ultimas-noticias h2 {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.ultimas-noticias a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.ultimas-noticias a:hover {
+  color: #00856f;
+}
+
+/* Linha decorativa abaixo do título */
+.ultimas-noticias h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 10px auto 40px auto;
+  border-radius: 2px;
+}
+
+.noticias-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* permite que quebre para a linha de baixo em telas pequenas */
+}
+
+.noticia {
+  max-width: 300px;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shad
+  }
+
+  footer {
+  background-color: #D96D39; /* cor institucional */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 15px;
+  margin-top: 40px;
+  border-top: 4px solid #006e5a; /* linha sutil no topo para destacar o rodapé */
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* ===== SEÇÃO SOCIAL  ===== */
+.social {
+    display: flex;
+    flex-direction: column; /* Mantém o texto abaixo dos ícones */
+    align-items: center;
+    gap: 10px; /* Espaçamento entre ícones e texto */
+    margin: 20px 0;
+}
+
+.social img {
+    width: 40px; /* Define o tamanho dos ícones */
+    height: 40px;
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+.social p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+}
+
+/* Container só para os ícones ficarem em linha */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os ícones */
+}
+
