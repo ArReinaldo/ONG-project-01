@@ -1,0 +1,277 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; /* mesma fonte das outras páginas */
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+  display: flex; /* Coloca logo e menu lado a lado */
+  justify-content: center; /* Centraliza os dois */
+  align-items: center;
+  gap: 60px; /* Espaçamento entre logo e menu */
+  padding: 20px 60px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* ===== MENU ===== */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #00856f;
+}
+
+
+/* ===== SEÇÃO DE PROJETOS ===== */
+.projetos {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* fundo suave como o restante do site */
+  text-align: center;
+}
+
+.projetos h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* ----- BLOCO DE IMAGENS ----- */
+.bloco-image {
+  display: flex;                 /* coloca as imagens lado a lado */
+  justify-content: center;       /* centraliza as imagens na tela */
+  gap: 20px;                     /* espaço entre as imagens */
+  margin-bottom: 40px;           /* espaço abaixo de cada bloco */
+}
+
+/* ----- IMAGENS ----- */
+.bloco-image img {
+  width: 100%;
+  max-width: 350px;              /* tamanho máximo */
+  border-radius: 15px;           /* bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bloco-image img:hover {
+  transform: scale(1.05);        /* leve zoom no hover */
+}
+
+/* ----- TEXTO DOS PROJETOS ----- */
+.projetos ul {
+  list-style: none;              /* remove marcadores */
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;           /* justifica os textos */
+}
+
+.projetos li {
+  font-weight: bold;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.projetos p {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .bloco-image {
+    flex-direction: column;      /* imagens empilhadas no mobile */
+    align-items: center;
+  }
+
+  .bloco-image img {
+    max-width: 90%;
+  }
+}
+/* ===== ESTILOS DA SEÇÃO DE PROJETOS ===== */
+
+.projetos {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.projetos h2 {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* BLOCO DE IMAGENS */
+.bloco-imagens {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+/* CADA PROJETO (imagem + título + texto) */
+.projeto {
+  max-width: 320px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.projeto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.projeto img:hover {
+  transform: scale(1.05);
+}
+
+.projeto h3 {
+  color: #0d0e0d;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.projeto p {
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .bloco-imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projeto {
+    max-width: 90%;
+  }
+}
+
+/* ===== SEÇÃO COMO CONTRIBUIR ===== */
+.como-contribuir {
+  background-color: #f9f9f9;  /* Fundo leve como o 'Quem Somos' */
+  padding: 60px 20px;         /* Espaçamento interno confortável */
+}
+
+/* Container geral */
+.como-container {
+  display: flex;              /* Coloca texto e imagem lado a lado */
+  align-items: center;        /* Centraliza verticalmente */
+  justify-content: center;    /* Centraliza o conjunto na tela */
+  max-width: 1200px;          /* Limita a largura máxima */
+  margin: 0 auto;             /* Centraliza o bloco */
+  gap: 60px;                  /* Espaço entre texto e imagem */
+}
+
+/* Texto (lado esquerdo) */
+.como-texto {
+  max-width: 550px;           /* Limita a largura para boa leitura */
+}
+
+.como-texto h2 {
+  font-size: 2rem;
+  color: #0c0c0c;             /* Cor verde padrão */
+  margin-bottom: 15px;        /* Espaço abaixo do título */
+  text-align: center;
+}
+
+.como-texto p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;           /* Espaçamento entre linhas */
+  text-align: justify;        /* Alinha o texto em bloco */
+  margin-bottom: 25px;        /* Espaço entre o texto e os botões */
+}
+
+/* Botões */
+.botoes-contribuir {
+  display: flex;
+  flex-direction: column;     /* Organiza os botões na vertical */
+  gap: 15px;                  /* Espaço entre os botões */
+}
+
+.botao {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #183aa8;  /* Verde principal */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;        /* Borda arredondada */
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #a76d17;  /* Tom de verde mais escuro no hover */
+}
+
+/* Imagem (lado direito) */
+.como-imagem img {
+  width: 400px;
+  border-radius: 20px;        /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .como-container {
+    flex-direction: column;   /* Empilha texto e imagem */
+    text-align: center;
+  }
+
+  .botoes-contribuir {
+    align-items: center;
+  }
+
+  .como-imagem img {
+    width: 90%;               /* Faz a imagem ocupar mais espaço no mobile */
+  }
+}
+
+/* ===== FOOTER ===== */
+  footer {
+  background-color: #D96D39; /* cor institucional */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 15px;
+  margin-top: 40px;
+  border-top: 4px solid #006e5a; /* linha sutil no topo para destacar o rodapé */
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
