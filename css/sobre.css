@@ -8,84 +8,84 @@
 
 /* ===== CABEÇALHO ===== */
 header {
-  display: flex; /* Coloca logo e menu lado a lado */
-  flex-direction: center; /* Empilha logo em cima e menu embaixo */
-  justify-content: center; /* Centraliza os dois verticalmente */
-  gap: 60px; /* Espaçamento entre logo e menu */
+  display: flex; 
+  flex-direction: center; 
+  justify-content: center; 
+  gap: 60px; 
   padding: 20px 60px;
   align-items: center;
-  position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
-  background-color: #ffffff; /* Fundo branco para o header */
-  padding: 20px 0; /* Espaçamento interno superior e inferior */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o cabeçalho */
-  top: 0; /* Fixa o cabeçalho no topo */
-  z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+  position: sticky; 
+  background-color: #ffffff; 
+  padding: 20px 0; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  top: 0; 
+  z-index: 1000; 
 }
 
 /* ===== LOGO ===== */
 .logo img {
-  max-width: 180px; /* Define um tamanho máximo para a logo */
-  height: auto; /* Mantém a proporção da imagem */
-  margin-bottom: 10px; /* Espaço entre a logo e o menu */
+  max-width: 180px; 
+  height: auto; 
+  margin-bottom: 10px; 
 }
 
 /* ===== MENU DE NAVEGAÇÃO ===== */
 .menu {
-  display: flex; /* Deixa os links lado a lado */
-  gap: 30px; /* Espaçamento entre os itens */
+  display: flex; 
+  gap: 30px; 
 }
 
 .menu a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  color: #333; /* Cor do texto dos links */
-  font-weight: bold; /* Deixa o texto mais marcante */
-  transition: color 0.3s ease; /* Efeito suave quando o mouse passa por cima */
+  text-decoration: none; 
+  color: #333; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
 
 .menu a:hover {
-  color: #00856f; /* Verde quando o link é destacado */
+  color: #00856f; 
 }
 
 /* ===== SEÇÃO QUEM SOMOS ===== */
 .sobre {
-  padding: 60px 20px;          /* Espaçamento interno (em cima/baixo e laterais) */
-  background-color: #f9f9f9;   /* Cor de fundo clara para destacar a seção */
+  padding: 60px 20px;          
+  background-color: #f9f9f9;   
 }
 
 /* Container principal que segura a imagem e o texto */
 .sobre-container {
-  display: flex;               /* Coloca imagem e texto lado a lado */
-  align-items: center;         /* Centraliza verticalmente os dois blocos */
-  justify-content: center;     /* Centraliza o conjunto na tela */
-  max-width: 1200px;           /* Limita a largura total para não esticar demais */
-  margin: 0 auto;              /* Centraliza o bloco no meio da página */
-  gap: 50px;                   /* Espaçamento entre imagem e texto */
+  display: flex;               
+  align-items: center;         
+  justify-content: center;     
+  max-width: 1200px;           
+  margin: 0 auto;              
+  gap: 50px;                   
 }
 
 /* Bloco que contém a imagem */
 .sobre-image img {
-  width: 550px;          /* Reduz o tamanho da imagem */
-  border-radius: 20px;   /* Deixa as bordas arredondadas */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve */
+  width: 550px;          
+  border-radius: 20px;   
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 /* Bloco de texto */
 .sobre-texto {
-  max-width: 600px;            /* Impede que o texto fique muito largo */
+  max-width: 600px;            
 }
 
 /* Estilo do título "Quem Somos" */
 .sobre-texto h2 {
-  font-size: 2rem;             /* Tamanho grande do título */
-  color: #040505;              /* Verde principal do site */
-  margin-bottom: 15px;         /* Espaço entre o título e o parágrafo */
+  font-size: 2rem;             
+  color: #040505;              
+  margin-bottom: 15px;         
 }
 
 /* Estilo do parágrafo */
 .sobre-texto p {
-  font-size: 1.1rem;           /* Tamanho confortável de leitura */
-  color: #333;                 /* Cor neutra e legível */
-  line-height: 1.6;            /* Espaçamento entre linhas */
+  font-size: 1.1rem;           
+  color: #333;                 
+  line-height: 1.6;            
   text-align: justify;
 }
 
@@ -93,33 +93,33 @@ header {
 /* Quando a tela for menor que 768px (celular/tablet) */
 @media (max-width: 768px) {
   .sobre-container {
-    flex-direction: column;     /* Empilha imagem e texto (em vez de lado a lado) */
-    text-align: center;         /* Centraliza o texto */
+    flex-direction: column;     
+    text-align: center;         
   }
 
   .sobre-imagem img {
-    width: 90%;                 /* Faz a imagem ocupar quase toda a largura da tela */
+    width: 90%;                 
   }
 
   .sobre-texto {
-    max-width: 90%;             /* Deixa o texto acompanhar o tamanho da imagem */
+    max-width: 90%;             
   }
 }
 
 /* ===== SEÇÃO NOSSA HISTÓRIA ===== */
 .historia {
   padding: 60px 20px;
-  background-color: #ffffff; /* Fundo branco para contrastar com a seção anterior */
+  background-color: #ffffff; 
 }
 
 .historia-container {
-  display: flex; /* Coloca texto e imagem lado a lado */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza o conjunto na tela */
-  max-width: 1200px; /* Limita a largura total */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  gap: 50px; /* Espaço entre texto e imagem */
-  flex-direction: row; /* Mantém a ordem: imagem à direita */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 50px; 
+  flex-direction: row; 
 }
 
 .historia-container h2 {
@@ -130,7 +130,7 @@ header {
 /* Estilo da imagem */
 .historia-image img {
   width: 550px;
-  border-radius: 20px; /* Bordas arredondadas */
+  border-radius: 20px; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -155,7 +155,7 @@ header {
 /* Responsividade */
 @media (max-width: 768px) {
   .historia-container {
-    flex-direction: column; /* Empilha no celular */
+    flex-direction: column; 
     text-align: center;
   }
 
@@ -171,23 +171,23 @@ header {
 /* ===== MISSÃO, VISÃO E VALORES ===== */
 .missao-visao-valores {
   padding: 60px 20px;
-  background-color: #f9f9f9; /* Fundo claro */
+  background-color: #f9f9f9; 
 }
 
 .missao-visao-valores-container {
-  display: flex;              /* Coloca os 3 blocos lado a lado */
-  justify-content: center;    /* Centraliza na tela */
-  align-items: flex-start;    /* Alinha pelo topo */
-  gap: 40px;                  /* Espaçamento entre os blocos */
-  flex-wrap: wrap;            /* Faz quebrar linha em telas menores */
+  display: flex;              
+  justify-content: center;    
+  align-items: flex-start;    
+  gap: 40px;                  
+  flex-wrap: wrap;            
 }
 
 /* Cada bloco individual */
 .missao-image,
 .visao-image,
 .valores-image {
-  text-align: center;         /* Centraliza o conteúdo dentro de cada bloco */
-  max-width: 400px;           /* Limita a largura de cada item */
+  text-align: center;         
+  max-width: 400px;           
 }
 
 /* Títulos */
@@ -215,49 +215,49 @@ header {
 .visao-image img,
 .valores-image img {
   width: 100%;
-  max-width: 200px;          /* Tamanho fixo moderado */
-  border-radius: 20px;       /* Bordas arredondadas */
+  max-width: 200px;          
+  border-radius: 20px;       
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== RESPONSIVIDADE - MISSÃO, VISÃO E VALORES ===== */
 @media (max-width: 768px) {
   .missao-visao-valores-container {
-    flex-direction: column; /* Empilha as três seções em vez de deixá-las lado a lado */
-    align-items: center; /* Centraliza os blocos na tela */
-    text-align: center; /* Centraliza os títulos e parágrafos */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
   }
 
   .missao-image,
   .visao-image,
   .valores-image {
-    width: 90%; /* Faz cada bloco ocupar quase toda a largura do celular */
-    margin-bottom: 30px; /* Espaço entre os blocos */
+    width: 90%; 
+    margin-bottom: 30px; 
   }
 
   .missao-image img,
   .visao-image img,
   .valores-image img {
-    width: 80%; /* Diminui o tamanho das imagens no celular */
+    width: 80%; 
     height: auto;
   }
 
   .missao-image p,
   .visao-image p,
   .valores-image p {
-    text-align: justify; /* Mantém o texto justificado mesmo no mobile */
+    text-align: justify; 
   }
 }
 
 /* ===== FOOTER ===== */
   footer {
-  background-color: #D96D39; /* cor institucional */
+  background-color: #D96D39; 
   color: #ffffff;
   text-align: center;
   padding: 20px 10px;
   font-size: 15px;
   margin-top: 40px;
-  border-top: 4px solid #006e5a; /* linha sutil no topo para destacar o rodapé */
+  border-top: 4px solid #006e5a; 
 }
 
 footer p {

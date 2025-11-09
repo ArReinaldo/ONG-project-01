@@ -54,9 +54,9 @@ header {
   text-align: center;
   padding: 80px 20px;
 
-  width: 100%;      /* Garante que ocupe toda a largura da tela */
-  margin: 0;        /* Remove margens que centralizam a seção */
-  max-width: none;  /* Remove o limite de 1000px herdado */
+  width: 100%;      
+  margin: 0;        
+  max-width: none;  
 }
 
 

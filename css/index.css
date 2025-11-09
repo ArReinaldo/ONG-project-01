@@ -8,10 +8,10 @@
 
 /* --- CABEÇALHO --- */
 header {
-  display: flex;                  /* Coloca logo e menu lado a lado */
-  align-items: center;            /* Centraliza verticalmente */
-  justify-content: center; /* Deixa logo à esquerda e menu à direita */
-  gap: 60px;                      /* Espaçamento entre logo e menu */
+  display: flex;                  
+  align-items: center;            
+  justify-content: center; 
+  gap: 60px;                      
   padding: 20px 60px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -25,32 +25,32 @@ header {
 
 /* --- MENU --- */
 .menu {
-  display: flex;    /* Coloca os links lado a lado */
-  gap: 30px;        /* Espaçamento entre os links */
+  display: flex;    
+  gap: 30px;        
 }
 
 .menu a {
-  text-decoration: none;  /* Remove o sublinhado */
-  color: #333;            /* Cor do texto */
+  text-decoration: none;  
+  color: #333;            
   font-weight: bold;
-  transition: color 0.3s; /* Efeito suave ao passar o mouse */
+  transition: color 0.3s; 
 }
 
 .menu a:hover {
-  color: #00856f; /* Verde semelhante ao do site Mãos */
+  color: #00856f; 
 }
 
 /* --- LOGO --- */
 .logo img {
-  height: 90px; /* Tamanho da logo */
-  width: auto;  /* Mantém a proporção */
+  height: 90px; 
+  width: auto;  
 }
 
 /* ===== SEÇÃO O QUE FAZEMOS ===== */
 .oque-fazemos {
   text-align: center;
   padding: 60px 20px;
-  background-color: #f9f9f9; /* cor leve para diferenciar a seção */
+  background-color: #f9f9f9; 
 }
 
 .oque-fazemos h2 {
@@ -66,16 +66,16 @@ header {
   display: block;
   width: 80px;
   height: 3px;
-  background-color: #007bff; /* azul, pode mudar */
-  margin: 10px auto 40px auto; /* centraliza a linha */
+  background-color: #007bff; 
+  margin: 10px auto 40px auto; 
   border-radius: 2px;
 }
 
 .servicos-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* espaço entre os blocos */
-  flex-wrap: wrap; /* faz quebrar para outra linha em telas pequenas */
+  gap: 40px; 
+  flex-wrap: wrap; 
 }
 
 .servico {
@@ -111,16 +111,16 @@ header {
 
 @media (max-width: 700px) {
   .servicos-container {
-    flex-direction: column; /* empilha as imagens */
-    align-items: center; /* centraliza os blocos */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .servico {
-    max-width: 90%; /* ocupa quase toda a largura da tela */
+    max-width: 90%; 
   }
 
   .oque-fazemos h2 {
-    font-size: 1.8em; /* título um pouco menor */
+    font-size: 1.8em; 
   }
 
   .servico img {
@@ -131,21 +131,21 @@ header {
 
 /* ======= SEÇÃO HERO ======= */
 .hero {
-  display: flex;               /* coloca o texto e a imagem lado a lado */
-  align-items: center;         /* centraliza verticalmente */
-  justify-content: space-between; /* espaço entre texto e imagem */
-  padding: 60px 10%;           /* espaço interno (superior/inferior e laterais) */
-  background-color: #f8f9fa;   /* fundo claro */
+  display: flex;               
+  align-items: center;         
+  justify-content: space-between; 
+  padding: 60px 10%;           
+  background-color: #f8f9fa;   
 }
 
 .hero-text {
-  flex: 1;                     /* ocupa metade da largura */
+  flex: 1;                     
   max-width: 600px;
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
-  color: #000000;              /* azul escuro suave */
+  color: #000000;              
   margin-bottom: 20px;
 }
 
@@ -157,7 +157,7 @@ header {
 }
 
 .hero .btn {
-  background-color: #D96D39;   /* laranja */
+  background-color: #D96D39;   
   color: #fff;
   padding: 12px 24px;
   margin-right: 10px;
@@ -172,13 +172,13 @@ header {
 }
 
 .hero-image {
-  flex: 1;                     /* ocupa metade da largura */
+  flex: 1;                     
   display: flex;
   justify-content: center;
 }
 
 .hero-image img {
-  width: 90%;                  /* reduz um pouco o tamanho da imagem */
+  width: 90%;                  
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -187,7 +187,7 @@ header {
 .ultimas-noticias {
   text-align: center;
   padding: 60px 20px;
-  background-color: #ffffff; /* branco para destacar */
+  background-color: #ffffff; 
 }
 
 .ultimas-noticias h2 {
@@ -223,7 +223,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 40px;
-  flex-wrap: wrap; /* permite que quebre para a linha de baixo em telas pequenas */
+  flex-wrap: wrap; 
 }
 
 .noticia {
@@ -237,13 +237,13 @@ header {
   }
 
   footer {
-  background-color: #D96D39; /* cor institucional */
+  background-color: #D96D39; 
   color: #ffffff;
   text-align: center;
   padding: 20px 10px;
   font-size: 15px;
   margin-top: 40px;
-  border-top: 4px solid #006e5a; /* linha sutil no topo para destacar o rodapé */
+  border-top: 4px solid #006e5a; 
 }
 
 footer p {
@@ -254,16 +254,16 @@ footer p {
 /* ===== SEÇÃO SOCIAL  ===== */
 .social {
     display: flex;
-    flex-direction: column; /* Mantém o texto abaixo dos ícones */
+    flex-direction: column; 
     align-items: center;
-    gap: 10px; /* Espaçamento entre ícones e texto */
+    gap: 10px; 
     margin: 20px 0;
 }
 
 .social img {
-    width: 40px; /* Define o tamanho dos ícones */
+    width: 40px; 
     height: 40px;
-    margin: 0 10px; /* Espaçamento entre os ícones */
+    margin: 0 10px; 
 }
 
 .social p {
@@ -273,10 +273,9 @@ footer p {
     color: #333;
 }
 
-/* Container só para os ícones ficarem em linha */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre os ícones */
+    gap: 10px; 
 }
 

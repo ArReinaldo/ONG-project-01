@@ -56,12 +56,12 @@ main {
 
 /* Cada seção de texto */
 main section {
-  margin-bottom: 60px; /* Espaço entre as seções */
+  margin-bottom: 60px; 
 }
 
 /* Títulos */
 main h2 {
-  color: #000000;        /* Verde principal */
+  color: #000000;        
   font-size: 2rem;
   margin-bottom: 15px;
 }
@@ -87,7 +87,7 @@ main ul {
 
 /* ===== FORMULÁRIO ===== */
 form {
-  background-color: #f9f9f9;  /* Fundo leve */
+  background-color: #f9f9f9;  
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

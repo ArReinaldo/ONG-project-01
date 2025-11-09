@@ -3,15 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif; /* mesma fonte das outras páginas */
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-  display: flex; /* Coloca logo e menu lado a lado */
-  justify-content: center; /* Centraliza os dois */
+  display: flex; 
+  justify-content: center; 
   align-items: center;
-  gap: 60px; /* Espaçamento entre logo e menu */
+  gap: 60px; 
   padding: 20px 60px;
   position: sticky;
   top: 0;
@@ -47,7 +47,7 @@ header {
 /* ===== SEÇÃO DE PROJETOS ===== */
 .projetos {
   padding: 60px 20px;
-  background-color: #f9f9f9; /* fundo suave como o restante do site */
+  background-color: #f9f9f9; 
   text-align: center;
 }
 
@@ -59,31 +59,31 @@ header {
 
 /* ----- BLOCO DE IMAGENS ----- */
 .bloco-image {
-  display: flex;                 /* coloca as imagens lado a lado */
-  justify-content: center;       /* centraliza as imagens na tela */
-  gap: 20px;                     /* espaço entre as imagens */
-  margin-bottom: 40px;           /* espaço abaixo de cada bloco */
+  display: flex;                 
+  justify-content: center;       
+  gap: 20px;                     
+  margin-bottom: 40px;           
 }
 
 /* ----- IMAGENS ----- */
 .bloco-image img {
   width: 100%;
-  max-width: 350px;              /* tamanho máximo */
-  border-radius: 15px;           /* bordas arredondadas */
+  max-width: 350px;              
+  border-radius: 15px;           
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .bloco-image img:hover {
-  transform: scale(1.05);        /* leve zoom no hover */
+  transform: scale(1.05);        
 }
 
 /* ----- TEXTO DOS PROJETOS ----- */
 .projetos ul {
-  list-style: none;              /* remove marcadores */
+  list-style: none;              
   max-width: 900px;
   margin: 0 auto;
-  text-align: justify;           /* justifica os textos */
+  text-align: justify;           
 }
 
 .projetos li {
@@ -101,7 +101,7 @@ header {
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
   .bloco-image {
-    flex-direction: column;      /* imagens empilhadas no mobile */
+    flex-direction: column;      
     align-items: center;
   }
 
@@ -180,74 +180,74 @@ header {
 
 /* ===== SEÇÃO COMO CONTRIBUIR ===== */
 .como-contribuir {
-  background-color: #f9f9f9;  /* Fundo leve como o 'Quem Somos' */
-  padding: 60px 20px;         /* Espaçamento interno confortável */
+  background-color: #f9f9f9;  
+  padding: 60px 20px;         
 }
 
 /* Container geral */
 .como-container {
-  display: flex;              /* Coloca texto e imagem lado a lado */
-  align-items: center;        /* Centraliza verticalmente */
-  justify-content: center;    /* Centraliza o conjunto na tela */
-  max-width: 1200px;          /* Limita a largura máxima */
-  margin: 0 auto;             /* Centraliza o bloco */
-  gap: 60px;                  /* Espaço entre texto e imagem */
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+  max-width: 1200px;          
+  margin: 0 auto;             
+  gap: 60px;                  
 }
 
 /* Texto (lado esquerdo) */
 .como-texto {
-  max-width: 550px;           /* Limita a largura para boa leitura */
+  max-width: 550px;           
 }
 
 .como-texto h2 {
   font-size: 2rem;
-  color: #0c0c0c;             /* Cor verde padrão */
-  margin-bottom: 15px;        /* Espaço abaixo do título */
+  color: #0c0c0c;             
+  margin-bottom: 15px;        
   text-align: center;
 }
 
 .como-texto p {
   font-size: 1.1rem;
   color: #333;
-  line-height: 1.6;           /* Espaçamento entre linhas */
-  text-align: justify;        /* Alinha o texto em bloco */
-  margin-bottom: 25px;        /* Espaço entre o texto e os botões */
+  line-height: 1.6;           
+  text-align: justify;        
+  margin-bottom: 25px;        
 }
 
 /* Botões */
 .botoes-contribuir {
   display: flex;
-  flex-direction: column;     /* Organiza os botões na vertical */
-  gap: 15px;                  /* Espaço entre os botões */
+  flex-direction: column;     
+  gap: 15px;                  
 }
 
 .botao {
   display: inline-block;
   text-decoration: none;
-  background-color: #183aa8;  /* Verde principal */
+  background-color: #183aa8;  
   color: #fff;
   padding: 12px 25px;
-  border-radius: 30px;        /* Borda arredondada */
+  border-radius: 30px;        
   font-weight: bold;
   text-align: center;
   transition: background 0.3s ease;
 }
 
 .botao:hover {
-  background-color: #a76d17;  /* Tom de verde mais escuro no hover */
+  background-color: #a76d17;  
 }
 
 /* Imagem (lado direito) */
 .como-imagem img {
   width: 400px;
-  border-radius: 20px;        /* Bordas arredondadas */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 20px;        
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
   .como-container {
-    flex-direction: column;   /* Empilha texto e imagem */
+    flex-direction: column;   
     text-align: center;
   }
 
@@ -256,19 +256,19 @@ header {
   }
 
   .como-imagem img {
-    width: 90%;               /* Faz a imagem ocupar mais espaço no mobile */
+    width: 90%;               
   }
 }
 
 /* ===== FOOTER ===== */
   footer {
-  background-color: #D96D39; /* cor institucional */
+  background-color: #D96D39; 
   color: #ffffff;
   text-align: center;
   padding: 20px 10px;
   font-size: 15px;
   margin-top: 40px;
-  border-top: 4px solid #006e5a; /* linha sutil no topo para destacar o rodapé */
+  border-top: 4px solid #006e5a; 
 }
 
 footer p {

@@ -170,13 +170,13 @@ footer p {
 /* ===== BOTÕES VOLUNTARIADO/DOAÇÕES ===== */
 .cta-botoes {
     display: flex;
-    justify-content: center; /* centraliza os botões */
-    gap: 20px;               /* espaço entre os botões */
+    justify-content: center; 
+    gap: 20px;               
     margin-top: 15px;
 }
 
 .cta-botoes .cta-button {
-    text-decoration: none !important; /* remove sublinhado */
+    text-decoration: none !important; 
     color: #ffffff;
     background-color: #00856f;
     padding: 10px 20px;
